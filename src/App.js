@@ -5,6 +5,9 @@ function App() {
   return (
     <>
       <h1>Fruitmand bezorgservice</h1>
+        <form>
+
+        </form>
     </>
   );
 }

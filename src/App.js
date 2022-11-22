@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import FruitBlock
+  from "./Components/FruitBlock";
+
 
 function App() {
   return (
@@ -8,6 +11,8 @@ function App() {
 <main>
   <section>
 {/*Fruitmand*/}
+    <FruitBlock />
+
 
   </section>
 

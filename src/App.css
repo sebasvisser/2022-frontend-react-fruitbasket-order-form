@@ -1,5 +1,14 @@
-/* MVP.css v1.12 - https://github.com/andybrewer/mvp */
+/*Eigen css*/
+#fruit-block{
+    border: black solid 1px;
+    margin: 50px;
+}
 
+
+
+
+
+/* MVP.css v1.12 - https://github.com/andybrewer/mvp */
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;

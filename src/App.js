@@ -5,9 +5,17 @@ function App() {
   return (
     <>
       <h1>Fruitmand bezorgservice</h1>
-        <form>
+<main>
+  <section>
+{/*Fruitmand*/}
 
-        </form>
+  </section>
+
+  <section>
+    {/*formulier*/}
+    <Form />
+  </section>
+</main>
     </>
   );
 }

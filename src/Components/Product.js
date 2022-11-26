@@ -1,15 +1,19 @@
 import React
-    from "react";
+    , {
+    useState
+} from "react";
 
-function Product({produce, emoticon, count}) {
+function Product({produce, emoticon}) {
+    const [count, setCount] = useState(0);
+
     return (
         <>
             <div className={"fruit-block"}>
                 <span>{emoticon}</span>
                 <h2>{produce}</h2>
-                <button>MIN</button>
+                <button onClick={() => setCount(count - 1)}>MIN</button>
                 <h3>{count}</h3>
-                <button>PLUS</button>
+                <button onClick={() => setCount(count + 1)}>PLUS</button>
             </div>
         </>
     );

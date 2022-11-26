@@ -1,17 +1,10 @@
-import React, {
-  useState
-} from 'react';
+import React
+ from 'react';
 import './App.css';
 import FruitBlock
   from "./Components/FruitBlock";
 
-
 function App() {
-  // States of the Fruit
-  const [strawberryValue, setStrawberryValue] = useState(0);
-  const [bananaValue, setBananaValue] = useState(0);
-  const [appleValue, setAppleValue] = useState(0);
-  const [kiwiValue, setKiwiValue] = useState(0);
 
   return (
     <>
@@ -23,7 +16,7 @@ function App() {
         </section>
 
         <section>
-          {/*formulier*/}
+      {/*formulier*/}
         </section>
       </main>
     </>

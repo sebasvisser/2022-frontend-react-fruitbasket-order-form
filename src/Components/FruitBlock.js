@@ -9,22 +9,22 @@ function FruitBlock(){
             <Product
                 produce={"Bananen"}
                 emoticon="🍌"
-                count={0}
+                initialCount={0}
             />
             <Product
                 produce={"aardbeien"}
                 emoticon="🍓"
-                count={0}
+                initialCount={0}
             />
             <Product
                 produce={"appels"}
                 emoticon={"🍏"}
-                count={0}
+                initialCount={0}
             />
             <Product
                 produce={"kiwi's"}
                 emoticon={"🥝"}
-                count={0}
+                initialCount={0}
             />
         </>
     )

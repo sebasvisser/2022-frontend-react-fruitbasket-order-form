@@ -1,12 +1,32 @@
+import Product
+    from "./Product";
+import React
+    from "react";
+
 function FruitBlock(){
     return (
-        <div className={"fruit-block"}>
-            <span>Emoticon</span>
-            <h2>Naam Fruit</h2>
-            <button>MIN</button>
-            <h3>COUNT</h3>
-            <button>PLUS</button>
-        </div>
+        <>
+            <Product
+                produce={"Bananen"}
+                emoticon="🍌"
+                count={0}
+            />
+            <Product
+                produce={"aardbeien"}
+                emoticon="🍓"
+                count={0}
+            />
+            <Product
+                produce={"appels"}
+                emoticon={"🍏"}
+                count={0}
+            />
+            <Product
+                produce={"kiwi's"}
+                emoticon={"🥝"}
+                count={0}
+            />
+        </>
     )
 }
 

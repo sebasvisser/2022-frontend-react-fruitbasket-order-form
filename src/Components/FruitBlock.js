@@ -4,6 +4,13 @@ import React
     from "react";
 
 function FruitBlock(){
+    function resetCounters() {
+        setStrawberryValue(0);
+        setBananaValue(0);
+        setAppleValue(0);
+        setKiwiValue(0);
+        console.log("Alles resetten naar 0")
+    }
     return (
         <>
             <Product
@@ -26,6 +33,9 @@ function FruitBlock(){
                 emoticon={"🥝"}
                 initialCount={0}
             />
+            <div className="reset-button">
+                <button onClick={resetCounters}>RESET</button>
+            </div>
         </>
     )
 }

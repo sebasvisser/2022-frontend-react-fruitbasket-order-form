@@ -1,14 +1,16 @@
 import Product
     from "./Product";
 import React
-    from "react";
+    , {
+    useState
+} from "react";
 
 function FruitBlock(){
+    //global state voor alle counters als beginpunt (+ voor reset)
+    const [initialCount, setInitialCount] = useState(10);
+
     function resetCounters() {
-        setStrawberryValue(0);
-        setBananaValue(0);
-        setAppleValue(0);
-        setKiwiValue(0);
+        this.forceUpdate();
         console.log("Alles resetten naar 0")
     }
     return (
@@ -16,22 +18,22 @@ function FruitBlock(){
             <Product
                 produce={"Bananen"}
                 emoticon="🍌"
-                initialCount={0}
+                initialCount={initialCount}
             />
             <Product
                 produce={"aardbeien"}
                 emoticon="🍓"
-                initialCount={0}
+                initialCount={initialCount}
             />
             <Product
                 produce={"appels"}
                 emoticon={"🍏"}
-                initialCount={0}
+                initialCount={initialCount}
             />
             <Product
                 produce={"kiwi's"}
                 emoticon={"🥝"}
-                initialCount={0}
+                initialCount={initialCount}
             />
             <div className="reset-button">
                 <button onClick={resetCounters}>RESET</button>

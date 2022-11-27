@@ -3,8 +3,8 @@ import React
     useState
 } from "react";
 
-function Product({produce, emoticon}) {
-    const [count, setCount] = useState(0);
+function Product({produce, emoticon, initialCount}) {
+    const [count, setCount] = useState(initialCount);
 
     return (
         <>

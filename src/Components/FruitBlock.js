@@ -7,10 +7,14 @@ import React
 
 function FruitBlock(){
     //global state voor alle counters als beginpunt (+ voor reset)
-    const [initialCount, setInitialCount] = useState(10);
+    const [initialCount, setInitialCount] = useState(0);
+
+
+    const forceUpdate = React.useCallback(() => setInitialCount(0), []);
 
     function resetCounters() {
-        this.forceUpdate();
+        setInitialCount(1);
+        setInitialCount(0);
         console.log("Alles resetten naar 0")
     }
     return (
@@ -36,7 +40,7 @@ function FruitBlock(){
                 initialCount={initialCount}
             />
             <div className="reset-button">
-                <button onClick={resetCounters}>RESET</button>
+                <button onClick={forceUpdate}>RESET</button>
             </div>
         </>
     )

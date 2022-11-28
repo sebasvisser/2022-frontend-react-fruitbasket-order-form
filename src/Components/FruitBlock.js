@@ -18,7 +18,7 @@ function FruitBlock(){
         console.log("Alles resetten naar 0")
     }
     return (
-        <>
+        <article>
             <Product
                 produce={"Bananen"}
                 emoticon="🍌"
@@ -42,7 +42,7 @@ function FruitBlock(){
             <div className="reset-button">
                 <button onClick={forceUpdate}>RESET</button>
             </div>
-        </>
+        </article>
     )
 }
 

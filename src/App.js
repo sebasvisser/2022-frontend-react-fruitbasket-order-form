@@ -12,7 +12,7 @@ function App() {
     <>
       <h1>Fruitmand bezorgservice</h1>
       <main>
-        <section>
+        <section id="fruitblock">
       {/*Fruitmand*/}
           <FruitBlock />
         </section>

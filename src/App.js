@@ -3,6 +3,8 @@ import React
 import './App.css';
 import FruitBlock
   from "./Components/FruitBlock";
+import Form
+    from "./Components/Form";
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
 
         <section>
       {/*formulier*/}
+            <Form />
         </section>
       </main>
     </>

@@ -108,7 +108,7 @@ function Form() {
             </label>
             {errors.akkoord && <p>{errors.akkoord.message}</p>}
 
-            <input type="submit" />
+            <input type="submit" value="Verstuur" />
         </form>
     );
 }
